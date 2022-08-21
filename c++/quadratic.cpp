@@ -4,7 +4,6 @@ using namespace std;
 
 
 int main() {
-
   float a, b, c, x1, x2, expression, realPart, imaginaryPart;
   cout << "Enter a, b and c: ";
   cin >> a >> b >> c;
