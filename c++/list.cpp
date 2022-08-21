@@ -2,12 +2,12 @@
 using namespace std;
 
 int main() {
-  int a, b, i;
+  int a, b, i, j, l, m = 0;
   cout << "Enter starting number: ";
   cin >> a;
   cout << "Enter ending number: ";
   cin >> b;
-  cout << "" << endl;
+  cout << endl;
 
   if (a < b) {
     cout << "Numbers divisible by 7 from " << a << " to " << b << endl;
@@ -17,6 +17,26 @@ int main() {
             cout << i << ", ";
         }
     }
+    cout << endl;
+    cout << endl;
+    cout << "Prime numbers" << endl;
+    cout << "******************************" << endl;
+    cout<< "Prime List between" << "(" << a << " and " << b << ") :";
+    for (i = a; i < b; i++){
+        for (j = 2; j < i; j++){
+           if (i % j == 0){
+                l++;
+                break;
+            }
+        }
+        if(l == 0 && i != 1 && i != 2) {
+          cout << i << " ";
+          m++;
+        }
+        l = 0;
+    }
+    cout << endl; 
+    cout<< "Total number of prime numbers from" << "(" << a << " and " << b << ") :" << m << endl;
     return 0;
   } 
   else {
