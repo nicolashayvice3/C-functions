@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
   int a, b, i, j, l, m = 0;
+  cout << "Choose a starting & ending value and recieve all prime & divisible by 7 numbers between" << endl;
   cout << "Enter starting number: ";
   cin >> a;
   cout << "Enter ending number: ";
@@ -43,7 +44,7 @@ int main() {
       }
       l = 0;
   }
-  
+
   cout << endl; 
   cout<< "Total number of prime numbers from" << "(" << a << " and " << b << ") :" << m << endl;
   return 0;
