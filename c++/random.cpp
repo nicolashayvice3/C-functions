@@ -1,11 +1,16 @@
 #include <iostream>
 #include <cmath>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 
 int main() {
-  float a = 11, b = 20, i;
+  int minimum = 11, rangefromMin = 9, i;
+  int totalTimes = 6;
   string readyMessage = "";
+  srand(time(0));
+
   cout << "Random numbers between 10 - 20 with odd & even count" << endl;
   cout << "are you ready? ";
   cin >> readyMessage;
@@ -14,11 +19,8 @@ int main() {
   cout << "Random numbers between 10 to 20" << endl;
   cout << "******************************" << endl;
 
-  for (i = a; i < b; i++){
-    cout << i << ", ";
+  for (i = 1; i <= totalTimes; i++){
+    cout << rand() % rangefromMin + minimum << " ";
   }
-
-  if (a < 2) {
-    return 0;
-  } 
+  cout << endl;
 }
