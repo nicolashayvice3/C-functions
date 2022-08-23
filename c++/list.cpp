@@ -4,6 +4,7 @@ using namespace std;
 int main() {
   int a, b, i, j, l;
   int m = 0;
+  bool first = true;
   cout << "Choose a starting & ending value and recieve all prime & divisible by 7 numbers between" << endl;
   cout << "Enter starting number: ";
   cin >> a;
@@ -23,7 +24,9 @@ int main() {
   cout << "******************************" << endl;
   for (i = a; i < b; i++){
       if (i % 7 == 0){
-          cout << i << ", ";
+        if( first ) first = false;
+        else cout << ", ";
+        cout << i;
       }
   }
 
