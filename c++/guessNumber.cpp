@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     int guess, guessNumber = 0;
-    int minimum = 0, rangefromMin = 10;
+    int minimum = 1, rangefromMin = 10;
     // generate random number
     srand(time(0));
     int randomNumber = rand() % rangefromMin + minimum;
@@ -55,6 +55,8 @@ int main() {
         guessNumber++;
         cout << endl;
         cout << "Sorry wrong guess, you reached the limit! unlucky!" << endl;
+        cout << endl;
+        cout << "Correct number was : " << randomNumber << endl;
     } else if (guess == randomNumber) {
         cout << endl;
         cout << "Wow you guessed it right! Here's a cookie (::) " << endl;
