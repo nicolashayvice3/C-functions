@@ -2,6 +2,8 @@
 using namespace std;
 
 int main() {
+
+    // variables
     string name = "Your name here";
     int number = 0, units = 0;
 
@@ -28,6 +30,8 @@ int main() {
     cout << "Customer Name : " << name << "\n" << endl;
     cout << "Units Consumed : " << units << "\n" << endl;
 
+    // add all the prior prices up based on consumed units 
+    // while removing the previous range of units
     if (units <= 100) {
         int amount = (units * 0.30);
         cout << "amount : " << amount << "\n" << endl;
