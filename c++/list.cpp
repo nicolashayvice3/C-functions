@@ -1,9 +1,10 @@
+// standard headers
 #include <iostream>
 using namespace std;
 
 int main() {
 
-    // All used variables
+    // variables
     int a, b, i, j, l;
     int m = 0;
     bool first = true;

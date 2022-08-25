@@ -1,15 +1,19 @@
 #include <iostream>
+// new math header for use of sqrt()
 #include <cmath>
 using namespace std;
 
 
 int main() {
+
+  // variables
   float a, b, c, x1, x2, expression, realPart, imaginaryPart;
   cout << "Choose 3 different values for the quadratic euqation" << endl;
   cout << "Enter a, b and c: ";
   cin >> a >> b >> c;
   expression = b*b - 4*a*c;
 
+  // if statement with the 3 different outcomes 
   if (expression > 0) {
     x1 = (-b + sqrt(expression))/(2*a);
     x2 = (-b - sqrt(expression))/(2*a);
