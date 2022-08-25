@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     string name = "Your name here";
-    int number = 0, units = 0, amount;
+    int number = 0, units = 0;
 
     cout << "Auckland Power - Customer Bill Generator" << endl;
     cout << endl;
