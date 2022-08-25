@@ -45,4 +45,5 @@ int main() {
         int amount = ((units - 300) * 1.00 + 160);
         cout << "amount : " << amount << "\n" << endl;
     }
+    return 0
 }
