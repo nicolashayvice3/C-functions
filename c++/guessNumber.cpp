@@ -6,6 +6,7 @@ using namespace std;
 int main() {
     int guess, guessNumber = 0;
     int minimum = 0, rangefromMin = 10;
+    // generate random number
     srand(time(0));
     int randomNumber = rand() % rangefromMin + minimum;
 
@@ -20,6 +21,8 @@ int main() {
     cin >> guess;
     cout << endl;
 
+    // if right complete if not 1+ to amount of guessed and try again
+    // the process reapeats 3 times
     if (guess == randomNumber) {
         cout << "Wow you guessed it right! Here's a cookie (::) " << endl;
         return 0;
