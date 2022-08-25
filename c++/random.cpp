@@ -40,4 +40,6 @@ int main() {
   cout << "Number of even numbers in the list: " << a << endl;
   
   cout << endl;
+
+  return 0;
 }
