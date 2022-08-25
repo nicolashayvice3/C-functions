@@ -2,9 +2,12 @@
 using namespace std;
 
 int main() {
+
+    // All used variables
     int a, b, i, j, l;
     int m = 0;
     bool first = true;
+
     cout << "Choose a starting & ending value and recieve all prime & divisible by 7 numbers between" << endl;
     cout << "Enter starting number: ";
     cin >> a;
@@ -12,6 +15,7 @@ int main() {
     cin >> b;
     cout << endl;
 
+    // restart if starting value is lower than ending value
     if (a > b) {
         cout << "Choose a starting value lower than an ending value, try again" << endl;
         cout << "Enter starting number: ";
@@ -20,6 +24,7 @@ int main() {
         cin >> b;
     }
 
+    // display all divisble numbers by 7 from choosen range using for loop
     cout << "Numbers divisible by 7 from " << a << " to " << b << endl;
     cout << "******************************" << endl;
     for (i = a; i < b; i++){
@@ -30,6 +35,7 @@ int main() {
         }
     }
 
+    // display all prime numbers in choosen range
     cout << endl;
     cout << endl;
     cout << "Prime numbers" << endl;
@@ -49,6 +55,7 @@ int main() {
         l = 0;
     }
 
+    // display total amount of prime numbers in choosen range
     cout << endl; 
     cout<< "Total number of prime numbers from" << "(" << a << " and " << b << ") :" << m << endl;
     return 0;
