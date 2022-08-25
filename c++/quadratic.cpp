@@ -31,4 +31,5 @@ int main() {
     cout << "x2 = " << realPart << "-" << imaginaryPart << "i" << endl;
     return 0;
   }
+  return 0;
 }
