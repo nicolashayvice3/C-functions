@@ -8,3 +8,9 @@ If you want to test out each function you will have to 1- fork or clone the repo
 
 Once you have done that it should run in your terminal.
 If you wish to make changes and run it again you will have to do step 2 & 3 again.
+
+-----------------------------------------------------------------------------------------------
+
+# If the command is not recognized: 
+sudo apt-get install g++ 
+g++ --version # should work now
